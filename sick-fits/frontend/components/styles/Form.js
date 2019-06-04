@@ -17,9 +17,11 @@ const Form = styled.form`
   background: rgba(0, 0, 0, 0.02);
   border: 5px solid white;
   padding: 20px;
-  font-size: 1.5rem;
-  line-height: 1.5;
+  font-size: 2rem;
+  line-height: 2.5;
   font-weight: 600;
+  max-width: ${props => props.theme.maxWidth};
+  margin: 0 auto;
   label {
     display: block;
     margin-bottom: 1rem;
@@ -29,7 +31,7 @@ const Form = styled.form`
   select {
     width: 100%;
     padding: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     border: 1px solid black;
     &:focus {
       outline: 0;
@@ -57,7 +59,12 @@ const Form = styled.form`
       height: 10px;
       content: '';
       display: block;
-      background-image: linear-gradient(to right, #ff3019 0%, #e2b04a 50%, #ff3019 100%);
+      background-image: linear-gradient(
+        to right,
+        #ff3019 0%,
+        #e2b04a 50%,
+        #ff3019 100%
+      );
     }
     &[aria-busy='true']::before {
       background-size: 50% auto;

@@ -1,8 +1,9 @@
+import Items from '../components/Items';
 //Pages is how we do routing.
 const Home = props => {
   return (
     <div>
-      <p>Hello World</p>
+      <Items />
     </div>
   );
 };
