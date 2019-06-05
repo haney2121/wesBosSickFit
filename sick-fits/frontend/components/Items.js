@@ -33,7 +33,6 @@ export const ALL_ITEMS_QUERY = gql`
 const Items = () => {
   return (
     <Center>
-      Items
       <Query query={ALL_ITEMS_QUERY}>
         {({ data, loading, error }) => {
           if (loading) return <h1>Loading....</h1>;
